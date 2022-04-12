@@ -1,0 +1,74 @@
+<section class="remont">
+    <div class="container">
+    <div class="remont-top">
+        <div class="info">
+            <h1 class="remont-tittle"><span>Ремонт — </span> <br>дело ответственное</h1>
+            <div class="subtittles">
+                <img src="@img/Vector.svg" alt="">
+                <div class="sub-info">
+                    <p class="subtittle1">Вы хотите отремонтировать свой дом?
+                        Мы поможем вам воплотить мечту.</p>
+                    <p class="subtittle2">Самый важный результат в нашей работе — репутация компании и счастливые обладатели комфортного жилья.</p>    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="jobs"><a href="">
+            <h1 class="jobs-tittle">Посмотрите <br> наши работы</h1>
+        </a>
+        </div>
+    </div>
+    <div class="remont-bottom">
+        <div class="calculator">
+            <h1 class="calc-tittle">Посчитайте ремонт вашего дома</h1>
+            <div class="object-tip">
+                <p class="tip">Тип объекта</p>
+            <ul class="calc_list">
+                <li class="calc__item"><a href="#" class="calc__link">Квартира новостройка</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Квартира вторичка</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Дом/коттедж</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Коммерция</a></li>
+            </ul>
+            </div> 
+            <div class="remont-vid">
+                <p class="vid">Вид ремонта</p>
+            <ul class="calc_list1">
+                <li class="calc__item"><a href="#" class="calc__link">Косметический</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Капитальный</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Дизайнерский</a></li>               
+            </ul>
+            </div>           
+            <div class="range-square">
+                <p class="square">Площадь</p>
+                <div class="slidecontainer">
+                    <input type="range" min="20" max="200" step="1" class="slider" id="myRange"   oninput="fun1()">
+                    <input type="number" class="i1" id="i1">
+                    <script>
+                    function fun1() {
+                    var rng=document.getElementById('myRange'); //rng - это ползунок
+                    var i1=document.getElementById('i1'); // i1 - input
+                    i1.value=rng.value;
+                    }
+                    </script>
+                    <div class="numbers">
+                    <p>20</p>
+                    <p>200м2</p>
+                    </div>
+                  </div> 
+            </div>
+            <div class="phone">
+                <p class="tel">Ваш телефон</p>
+                <input type="telephone" placeholder="+7 (999) 999-99-99">
+            </div>
+            <p class="personal">Нажимая на кнопку, Вы соглашаетесь с условиями <a href=""> обработки персональных данных</a></p>
+            <a href=""><button class="calc-button">Рассчитать</button></a>
+        </div>
+        <div class="links">
+            <a href="">У меня свой дизайн-проект</a>
+            <a href="">Нужна помощь специалиста</a>
+        </div>
+    </div>
+    
+</div>
+</section>

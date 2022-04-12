@@ -1,0 +1,203 @@
+.about{
+    margin-top: 100px;
+    background-color: var( --bg-black);
+    .container{
+        .about__inner{
+            padding-top: 98px;
+            display: flex;
+            justify-content: space-between;
+            @media(max-width:1440px){
+                flex-direction: column;
+            }
+            .left{
+                max-width: 60%;
+                @media(max-width:1440px){
+                    max-width: 100%;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    color:#FFFFFF;
+                }
+                .left-tittle{
+                    font-weight: 800;
+                    font-size: 48px;
+                    line-height: 61px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                .subtittle1{
+                    padding-top: 20px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                .subtittle2{
+                    padding-top: 40px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 31px;
+                }
+                .subtittle3{
+                    padding-top: 30px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 130%;
+                }
+                .subtittle4{
+                    padding-top: 20px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 140%
+                }                
+               .subtittle5{
+                 padding-top: 20px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 26px;
+               }
+                
+                .icons{
+                    padding-top: 50px;
+                    padding-bottom:100px;
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 703px;
+                    .icons-info{
+                        .info{
+                            max-width: 160px;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 130%;
+                        }
+                    }
+                    @media(max-width:1440px){
+                       padding-bottom: 0;
+                    }
+                }
+            }
+            .right{
+                padding-top: 114px;
+                max-width: 500px;
+                max-height: 500px;
+                display: flex;
+                flex-wrap: wrap;
+                @media(max-width:1440px){
+                    max-width: 100%;
+                    padding-top: 63px;
+                    padding-bottom: 100px;                    
+                }
+                button{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    width: 250px;
+                    height: 250px;                    
+                    font-weight: 800;
+                    font-size: 16px;
+                    line-height: 130%;
+                    span{
+                        padding-bottom: 5px;
+                        font-weight: 800;
+                        font-size: 48px;
+                        line-height: 130%;
+                    }
+                }
+                .btn1{
+                    position: relative;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+                        top: 0;
+                        left: 0;
+                        border-top: 1px solid var(--button-color);
+                        border-left: 1px solid var(--button-color);
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;                        
+                        bottom: 0;
+                        right: 0%;
+                        border-right: 1px solid var(--button-color);                        
+                    }
+                    @media(max-width:1440px){
+                        width: 480px;
+                    }
+                }
+                .btn2{                       
+                  position: relative;
+                  &:before{
+                      content: '';
+                      position: absolute;
+                      width: 150px;
+                      height: 150px;
+                      top: 0;
+                      right: 0;
+                      border-right: 1px solid var(--button-color);
+                      border-top: 1px solid var(--button-color);
+                  }
+                  &:after{
+                      content:'';
+                      position: absolute;
+                      width: 150px;
+                      height: 150px;
+                      bottom: 0;
+                      left: 0;
+                      border-bottom: 1px solid var(--button-color);
+                  }
+                  @media(max-width:1440px){
+                    width: 480px;
+                }
+                    }
+                    .btn3{
+                        position: relative;
+                  &:before{
+                      content: '';
+                      position: absolute;
+                      width: 100px;
+                      height: 100px;
+                      bottom: 0;
+                      left: 0;
+                      border-bottom: 1px solid var(--button-color);
+                      border-left: 1px solid var(--button-color);
+                  }
+                  &:after{
+                      content:'';
+                      position: absolute;
+                      width: 100px;
+                      height: 200px;
+                      bottom: 0;
+                      right: 0;
+                      border-bottom: 1px solid var(--button-color);
+                      border-right: 1px solid var(--button-color);
+                  }
+                  @media(max-width:1440px){
+                    width: 480px;
+                }
+                    }
+                    .btn4{
+                        position: relative;
+                        &:before{
+                            content:'';
+                            position: absolute;
+                            width: 200px;
+                            height: 250px;
+                            bottom: 0;
+                            right: 0;
+                            border-right: 1px solid var(--button-color);
+                            border-bottom: 1px solid var(--button-color);
+                        }
+                        @media(max-width:1440px){
+                            width: 480px;
+                        }
+                    }
+                }
+            }
+        }
+    }

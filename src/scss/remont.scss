@@ -1,0 +1,305 @@
+.remont {
+    background-color: var(--bg-black);
+
+    .container {
+        @media(max-width:1440px){
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        .remont-top {
+            padding-top: 100px;
+            display: flex;
+            justify-content: space-between;
+            @media(max-width:1440px){
+                flex-direction: column;
+            }
+
+        .info {
+            max-width: 615px;
+            @media(max-width:1440px){
+                max-width: 100%;
+            }
+            .remont-tittle {
+                span {
+                    font-weight: 800;
+                }
+
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 130%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+
+            .subtittles {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding-top: 50px;
+                gap: 30px;
+
+                .sub-info {
+
+                    .subtittle1 {
+
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 130%;
+                        color: #FFFFFF;
+                    }
+
+                    .subtittle2 {
+                        padding-top: 20px;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 130%;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        .jobs {
+            background: url('../img/jobs-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 746px;
+            @media(max-width:1440px){
+                margin-top: 50px;
+                width: 100%;
+                background-size: cover;
+            }
+            .jobs-tittle {
+                padding-top: 75px;
+                padding-left: 50px;
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 130%;
+                color: #FFFFFF;
+                @media(max-width:1440px){
+                    padding: 51px 0 133px 50px;
+                }
+            }
+        }
+    }
+    .remont-bottom{
+        padding-top: 95px;
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width:1440px){
+            flex-direction: column;
+        }
+        .calculator{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 1034px;
+            height: 748px;
+            background-color: #fff;
+            @media(max-width:1440px){
+                width: 100%;
+            }
+            .calc-tittle{
+                padding-left: 50px;
+                padding-top: 50px;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 51px;
+                color: var(--text-black);
+
+            }
+            .object-tip{
+                p{
+                    padding-left: 50px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #999999;
+                }
+                .calc_list{
+                    padding-top: 10px;
+                    padding-left: 50px;
+                    list-style: none;
+                    display: flex;
+                    gap: 20px;
+                    li {
+                    padding: 16px 20px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 23px;
+                    
+                    &:active{
+                        border: 1px solid var(--button-color);
+                    }
+                    a{
+                        color: var(--text-black);
+                    }
+                    }
+                }
+            }
+            .remont-vid{
+                p{
+                    padding-left: 50px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #999999; 
+                }
+                .calc_list1{
+                    padding-top: 10px;
+                    padding-left: 50px;
+                    list-style: none;
+                    display: flex;
+                    gap: 20px;
+                    li {
+                    padding: 16px 20px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 23px;
+                    
+                    &:active{
+                        border: 1px solid var(--button-color);
+                    }
+                    a{
+                        color: var(--text-black);
+                    }
+                    }
+                
+                }
+            }
+            .range-square{
+                padding-left: 50px;
+                p{
+                    
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #999999;  
+                }
+                .slidecontainer{
+                    padding-top: 10px;
+                    width: 100%;
+                    .numbers{
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 450px;
+                    }
+                }
+                .slider {
+                    width: 450px;
+                    -webkit-appearance: none;
+                    
+                    height: 1px;
+                    border-radius: 5px;  
+                    background:  #797979;
+                    outline: none;                    
+                    -webkit-transition: .2s;
+                    transition: opacity .2s;
+                }
+                
+                .slider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%; 
+                    background: url('../img/Ellipse.svg');
+                    cursor: pointer;
+                }
+               
+                
+                .slider::-moz-range-thumb {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background: url('../img/Ellipse.svg');
+                    cursor: pointer;
+                }
+                .i1{
+                    margin-left: 20px;
+                    width: 71px;
+                    padding-left: 10px;
+                    height: 40px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: var(--text-black);
+                    border: 1px solid var(--button-color);
+                }
+            }
+            .phone{
+                p{
+                    padding-left: 50px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #999999; 
+                }
+                input{
+                    margin-left: 50px;
+                    width: 280px;
+                    height: 55px;
+                    margin-top: 16px;
+                    padding-left: 20px;
+                    border: 1px solid var(--button-color);
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: var(--text-black);
+
+                }
+            }
+            .personal{
+                text-align: center;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: var(--text-black);
+            }
+            a{
+                .calc-button{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 219px;
+                    height: 63px;
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 23px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .links{
+            width: 430px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            @media(max-width:1440px){
+                padding-top: 50px;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            }
+            a{
+                font-weight: 600;
+                font-size: 1.88vw;
+                line-height: 46px;
+                text-decoration: none;
+                color: #FFFFFF;
+                max-width: 285px;                
+                padding: 2.60vw 4.69vw 2.60vw 2.60vw;
+                border: 2px solid var(--button-color);
+                @media(max-width:1440px){
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+
+    }
+}

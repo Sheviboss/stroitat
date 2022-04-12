@@ -1,0 +1,112 @@
+.variant{
+    .container{
+        .variant-tittle{
+            padding-top: 100px;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 61px;
+            text-transform: uppercase;
+            color: var(--text-black);
+        }
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            .card{
+                margin-top: 50px;
+                width: 32%;
+                background-color: var(--bg-black);
+                .card-tittle{
+                    font-weight: 800;
+                    font-size: 32px;
+                    line-height: 41px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    padding-top: 50px;
+                    padding-left: 50px;
+                    @media(max-width:1440px){
+                        padding-top: 20px;
+                        font-size: 24px;
+                        padding-left: 20px;
+                    }
+                }
+                .card-price{
+                    padding-left: 50px;
+                    padding-top: 40px;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 41px;
+                    color: #FFFFFF;
+                    padding-bottom: 30px;
+                    @media(max-width:1440px){
+                        padding-left: 20px;
+                        padding-top: 30px;
+                    }
+                }
+                hr{
+                   margin: 0 auto;
+                    max-width: 83%;
+                    height: .5px;
+                    color: #434C56;
+                }
+                .card-subtittle{
+                    padding-top: 30px;
+                    padding-left: 50px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    @media(max-width:1440px){
+                        padding-left: 20px;
+                        padding-top: 30px;
+                    }
+                }
+                .card-subtittle1{
+                    font-style: normal;
+                    padding-top: 15px;
+                    padding-left: 50px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                   padding-bottom: 20px;
+                   @media(max-width:1440px){
+                    padding-left: 20px;
+                    padding-top: 15px;
+                    height: 110px;
+                }
+                }
+                .card-link{
+                    display: block;
+                    padding-left: 50px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-decoration-line: underline;                    
+                    color: var(--button-color);
+                    @media(max-width:1440px){
+                        padding-left: 20px;
+                        padding-top: 20px;
+                    }
+                }
+                
+                    .card-button{
+                        margin-left: 50px;
+                        margin-top: 40px;
+                        margin-bottom: 50px;
+                        width: 199px;
+                        height: 58px;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 26px;
+                        text-transform: uppercase;
+                        @media(max-width:1440px){
+                           margin-left: 20px;
+                           margin-bottom: 20px;
+                           margin-top: 30px;
+                        }
+                    }
+                
+            }
+        }
+    }
+}

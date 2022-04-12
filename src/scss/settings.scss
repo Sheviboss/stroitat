@@ -3,67 +3,56 @@
   {
     margin: 0;
     padding: 0;
-    font-family: gilroy;
+    font-family: Mont;
   }
   :root {
     /* colors */
-    --background: #FAFAFA;
-    --main-color: #FFFFFF;
-    --bogy-text: #00325A;
-    --button-color: #226699;
-    --button-text: #6DA4CD;
+    --text-black: #282828;
+    --bg-black:#1D2228;
+    --bg-white: #E5E5E5;
+    --button-color: #FF4C00;
+    --button-hover: #FB7405;
+    
   
 
   }
   body{
-    background: linear-gradient(80.5deg, #83A4BD 11.55%, #A5A2B3 24.51%, #BA929B 33.33%, #BD8689 39.89%, #C46F6A 47.85%, #C65857 55.62%, #BF4145 65.14%, #9C2E37 75.49%, #7A262E 84.66%, #5B1E23 95.55%, #421F23 103.99%, #2D1C22 111.11%);
-    background-repeat: no-repeat;
+    
   }
 
   .container{
     margin: 0 auto;
-    max-width: 1162px;
-    padding-left: 5%;
-    padding-right: 5%;
+    max-width: 1780px;
+    padding-left: 2%;
+    padding-right: 2%;    
   }
   a{
     text-decoration: none;
   }
-
-  h1,h2,h3,h4{
-   
-    color: var(--main-color);
-
-  }
-
-  p{
-    color: var(--main-color);
-    
-  }
-
+ 
   button {
-    background-color: #F2323D;
+    background-color: var(--button-color);
     border:none;
+    color: #fff;
+  button:hover{
+    background-color: var(--button-hover);
+  }
    
-    cursor: pointer;
-    color: var(--main-color);
+    cursor: pointer;   
     transition: background-color 0.3s ease-in-out;
-    border-radius: 6px;
     box-shadow: none;
     transition: 0.3s ease-in-out;
   }
   
-  button:hover{
-    background-color: #C9000C;
-  }
+
   .link {
     
-    color: var(--main-color);
+    color: #fff;
     transition: color 0.3s ease-in-out;
   }
   
   .link:hover {
-    color: var(--main-color);
+    text-decoration: underline;
   }
   
  
