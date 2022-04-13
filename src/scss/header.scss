@@ -13,10 +13,31 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media(max-width:768px){
+    padding-top: 25px;
+  }
 }
 
 .logo{
   padding: 0;
+  @media(max-width:768px){
+    img{
+    width: 130px;
+    height: 53px;
+    }
+  }
+  @media(max-width:650px){
+    img{
+      width: 107px;
+      height: 45px;
+    }
+  }
+  @media(max-width:375px){
+    img{
+      width: 90px;
+      height: 40px;
+    }
+  }
 }
 
 
@@ -52,7 +73,7 @@ header{
   height: 20px;
   display: none;
   border: none;
-  padding-top: 16px;
+  
   background-color: transparent;
   cursor: pointer;
   &:hover{
@@ -124,6 +145,12 @@ font-weight: 800;
 font-size: 24px;
 line-height: 31px;
 text-transform: capitalize;
+@media(max-width:425px){
+  font-size: 20px;
+}
+@media(max-width:375px){
+  font-size: 15px;
+}
 }
 
 .call{
@@ -131,6 +158,9 @@ text-transform: capitalize;
   font-size: 16px;
   line-height: 20px;
   padding: 16px 30px;
+  @media(max-width:650px){
+    display: none;
+  }
 }
 .stop-scroll {
   overflow: hidden;
@@ -141,17 +171,33 @@ text-transform: capitalize;
   .main-banner{
     max-width: 941px;
     padding-top: 145px;
+    @media(max-width:768px){
+      padding-top: 119px;
+    }
     .main-tittle{
       color: #Fff;
       font-weight: 800;
       font-size: 48px;
-      line-height: 130%
+      line-height: 130%;
+      @media(max-width:768px){
+        font-size: 40px;
+      }
+      @media(max-width:650px){
+        font-size: 36px;
+      }
     }
     .main-subtittle{     
       color: #Fff;
       font-weight: 600;
       font-size: 36px;
       line-height: 46px;
+      @media(max-width:768px){
+        font-size: 28px;
+      }
+      @media(max-width:650px){
+        font-size: 24px;
+        line-height: 31px;
+      }
     }
     .main-subtittle2{
       padding-top: 20px;
@@ -159,23 +205,50 @@ text-transform: capitalize;
       font-weight: 600;
       font-size: 36px;
       line-height: 46px;
+      @media(max-width:768px){
+        font-size: 28px;
+      }
+      @media(max-width:650px){
+        font-size: 20px;
+      }
     }
     .buttons{
       display: flex;
       padding-top: 60px;     
       gap: 100px;
       padding-bottom: 161px;
+      @media(max-width:768px){
+        padding-top: 50px;
+      }
+      @media(max-width:650px){
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 74px;
+      }
       .price{
         padding: 16px 30px;
         font-weight: 600;
         font-size: 20px;
         line-height: 26px;
+        @media(max-width:768px){
+         padding: 0;
+         width: 294px;
+        height: 58px;
+        font-size: 20px;
+        }
+        
       }
       .zayava{
         padding: 16px 30px;
         font-weight: 600;
         font-size: 20px;
         line-height: 26px;
+        @media(max-width:768px){
+          padding: 0;
+          width: 232px;
+          height: 58px;
+         font-size: 20px;
+         }
       }
     }
   }
@@ -184,8 +257,8 @@ text-transform: capitalize;
 @media (max-width: 1300px) {
   .header__container{
     padding-top: 35px;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
   }  
   .burger {
     display: block;
@@ -244,19 +317,5 @@ text-transform: capitalize;
   
 }
 
-@media (max-width: 320px){
-  .nav {
-    width: 320px;
-  }
- 
-  .burger-line{
-    margin-top: 10px;
-  }
-  .logo{
-    padding-top: 10px;
-  }
-  .burger {
-    margin-top: 27px;
-  }
-}
+
 

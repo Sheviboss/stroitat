@@ -25,6 +25,12 @@
                     line-height: 61px;
                     text-transform: uppercase;
                     color: #FFFFFF;
+                    @media(max-width:768px){
+                        font-size: 40px;
+                    }
+                    @media(max-width:480px){
+                        font-size: 36px;
+                    }
                 }
                 .subtittle1{
                     padding-top: 20px;
@@ -69,6 +75,9 @@
                             font-weight: 600;
                             font-size: 16px;
                             line-height: 130%;
+                            @media(max-width:600px){
+                                font-size: 12px;
+                            }
                         }
                     }
                     @media(max-width:1440px){
@@ -104,6 +113,11 @@
                         font-size: 48px;
                         line-height: 130%;
                     }
+                    p{
+                        font-weight: 800;
+                        font-size: 48px;
+                        line-height: 130%;
+                    }
                 }
                 .btn1{
                     position: relative;
@@ -127,8 +141,9 @@
                         border-right: 1px solid var(--button-color);                        
                     }
                     @media(max-width:1440px){
-                        width: 480px;
+                        width: 50%;
                     }
+                   
                 }
                 .btn2{                       
                   position: relative;
@@ -152,8 +167,9 @@
                       border-bottom: 1px solid var(--button-color);
                   }
                   @media(max-width:1440px){
-                    width: 480px;
+                    width: 50%;
                 }
+               
                     }
                     .btn3{
                         position: relative;
@@ -178,8 +194,9 @@
                       border-right: 1px solid var(--button-color);
                   }
                   @media(max-width:1440px){
-                    width: 480px;
+                    width: 50%;
                 }
+              
                     }
                     .btn4{
                         position: relative;
@@ -194,8 +211,9 @@
                             border-bottom: 1px solid var(--button-color);
                         }
                         @media(max-width:1440px){
-                            width: 480px;
+                            width: 50%;
                         }
+                      
                     }
                 }
             }
