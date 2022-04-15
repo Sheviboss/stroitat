@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>stroitat</title>
+</head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <a href="#" class="logo">
+        <img src="img/logo.svg" alt="">
+    </a>
+    <nav class="nav" data-nav>
+     
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">О Нас</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+      </ul>
+    </nav>
+    <div class="header__tel">
+      <div class="header__tel-tel">
+        +7 999 999-99-99
+      </a>      
+      </div>
+    <a href=""><button class="call">Заказать звонок</button></a>
+    </div>
+    <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+      <span class="burger__line"></span>
+    </button>
+  </div>
+  <div class="container">
+    <div class="main-banner">
+      <h1 class="main-tittle">Профессиональный ремонт и отделка недвижимости «под ключ»</h1>
+      <h2 class="main-subtittle">с фиксированной датой и ценой по договору</h2>
+      <h2 class="main-subtittle2">в г. Набережные Челны и пригороде</h2>
+      <div class="buttons">
+       <button class="price">Рассчитать стоимость</button>
+       <button class="zayava">Оставить заявку</button>
+      </div>
+    </div>
+  </div>
+</header>
+    <section class="remont">
+    <div class="container">
+    <div class="remont-top">
+        <div class="info">
+            <h1 class="remont-tittle"><span>Ремонт — </span> <br>дело ответственное</h1>
+            <div class="subtittles">
+                <img src="img/Vector.svg" alt="">
+                <div class="sub-info">
+                    <p class="subtittle1">Вы хотите отремонтировать свой дом?
+                        Мы поможем вам воплотить мечту.</p>
+                    <p class="subtittle2">Самый важный результат в нашей работе — репутация компании и счастливые обладатели комфортного жилья.</p>    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="jobs"><a href="">
+            <h1 class="jobs-tittle">Посмотрите <br> наши работы</h1>
+        </a>
+        </div>
+    </div>
+    <div class="remont-bottom">
+        <div class="calculator">
+            <h1 class="calc-tittle">Посчитайте ремонт вашего дома</h1>
+            <div class="object-tip">
+                <p class="tip">Тип объекта</p>
+            <ul class="calc_list">
+                <li class="calc__item"><a href="#" class="calc__link">Квартира новостройка</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Квартира вторичка</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Дом/коттедж</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Коммерция</a></li>
+            </ul>
+            </div> 
+            <div class="remont-vid">
+                <p class="vid">Вид ремонта</p>
+            <ul class="calc_list1">
+                <li class="calc__item"><a href="#" class="calc__link">Косметический</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Капитальный</a></li>
+                <li class="calc__item"><a href="#" class="calc__link">Дизайнерский</a></li>               
+            </ul>
+            </div>           
+            <div class="range-square">
+                <p class="square">Площадь</p>
+                <div class="slidecontainer">
+                    <input type="range" min="20" max="200" step="1" class="slider" id="myRange"   oninput="fun1()">
+                    <input type="text" class="i1" id="i1">
+                    <script>
+                    function fun1() {
+                        let ed=" м2"
+                    var rng=document.getElementById('myRange'); //rng - это ползунок
+                    var i1=document.getElementById('i1'); // i1 - input
+                    i1.value=rng.value+ed;
+                    }
+                    </script>
+                    <div class="numbers">
+                    <p>20</p>
+                    <p>200м2</p>
+                    </div>
+                  </div> 
+            </div>
+            <div class="phone">
+                <p class="tel">Ваш телефон</p>
+                <input type="telephone" placeholder="+7 (999) 999-99-99">
+            </div>
+            <div class="flex">
+            <p class="personal">Нажимая на кнопку, Вы соглашаетесь с условиями <a href=""> обработки персональных данных</a></p>
+            <a href=""><button class="calc-button">Рассчитать</button></a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="">У меня свой дизайн-проект</a>
+            <a href="">Нужна помощь специалиста</a>
+        </div>
+    </div>
+    
+</div>
+</section>
+    <section class="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="left">
+                <h1 class="left-tittle">МЫ — КОМПАНИЯ<br>«СтройТат»</h1>
+                <p class="subtittle1">Доброго вам времени суток! Давайте знакомиться!</p>
+                <p class="subtittle2">Занимаемся ремонтом недвижимости любой сложности «под ключ»</p>
+               <p class="subtittle3">Наша деятельность успешно распространяется в г. Набережные Челны.</p>
+                <p class="subtittle4">Мы всегда готовы предложить услуги по ремонту и отделке комфортного и уютного гнёздышка по готовому или индивидуальному проекту. Мы ориентируемся на качество и сроки ремонта, чтобы все наши клиенты остались довольны сотрудничеством и могли в полной мере насладиться комфортом в домах.</p>
+               <p class="subtittle5">Мы ремонтируем недвижимость применяя современные техники и технологии</p>
+            <div class="icons">
+                <div class="icons-info">
+                    <img src="img/Vector1.svg" alt="">
+                    <p class="info">поэтапная <br>работа</p>
+                </div>
+                <div class="icons-info">
+                    <img src="img/Vector2.svg" alt="">
+                    <p class="info">по договору <br>точно в срок</p>
+                </div>
+                <div class="icons-info">
+                    <img src="img/Vector3.svg" alt="">
+                    <p class="info">многоуровневый <br>контроль качества</p>
+                </div>
+                <div class="icons-info">
+                    <img src="img/Vector4.svg" alt="">
+                    <p class="info">лучшая цена <br>на рынке</p>
+                </div>
+            </div>
+            </div>
+            <div class="right">
+                <button class="btn1"><span>2007</span>
+                    год основания<br>компании</button>
+                <button class="btn2"><span>250+</span>
+                довольных<br>клиентов</button>
+                <button class="btn3"><span>200+</span>
+                    выполненных ремонтов</button>
+                <button class="btn4"><span>5</span>
+                    лет гарантии</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="variant">
+    <div class="container">
+        <h1 class="variant-tittle">3 варианта ремонта на ваш выбор</h1>  
+        <div class="cards">
+            <div class="card">
+                <h1 class="card-tittle">хороший косметический ремонт</h1>
+                <h3 class="card-price">от 1000 руб./м2</h3>
+                <hr>
+                <p class="card-subtittle">Подойдет:</p>
+                <p class="card-subtittle1">Чтобы освежить квартиру<br>
+                    Для сдачи в аренду<br>
+                    Для предпродажной подготовки</p>
+                 <a class="card-link" href="">Посмотреть список работ</a>  
+                 <a href=""><button class="card-button">заказать</button></a> 
+            </div>
+            <div class="card">
+                <h1 class="card-tittle">серьёзный капитальный ремонт</h1>
+                <h3 class="card-price">от 1800 руб./м2</h3>
+                <hr>
+                <p class="card-subtittle">Подойдет:</p>
+                <p class="card-subtittle1">Для ремонта новостроек<br>
+                    Для ремонта коттеджа<br>
+                    Чтобы полностью отремонтировать квартиру</p>
+                 <a class="card-link" href="">Посмотреть список работ</a>  
+                 <a href=""><button class="card-button">заказать</button></a> 
+            </div>
+            <div class="card">
+                <h1 class="card-tittle">стильный дизайнерский ремонт</h1>
+                <h3 class="card-price">от 1800 руб./м2</h3>
+                <hr>
+                <p class="card-subtittle">Подойдет:</p>
+                <p class="card-subtittle1">Для авторского дизайна<br>
+                    Для применения сложных технологий<br>
+                    Для роскошной жизни</p>
+                 <a class="card-link" href="">Посмотреть список работ</a>  
+                 <a href=""><button class="card-button">заказать</button></a> 
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="portfolio">
+    <div class="container">
+        <div class="portfolio-tittle">
+            <h1 class="tittle">наши работы</h1>
+            <a href=""><button class="tittle-btn">Смотреть все</button></a>
+        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <img src="img/slide-bg.jpg" alt="">
+                <div class="slide-content">
+                    <h2 class="content-tittle">Ремонт 3-х комнатной квартиры</h2>
+                    <div class="info">
+                        <p class="adress"><span>Адрес объекта:</span>МЖК Sunrice City</p>
+                        <p class="S"><span>Площадь:</span>110 м2</p>
+                        <p class="srok"><span>Срок выполнения:</span>25 дней</p>
+                        <p class="price"><span>Стоимость ремонта:</span>250 000 рублей</p>
+                    </div>
+                    <a href=""><button class="slide-button">Подробнее<img src="img/Arrow.svg" alt=""></button></a>
+                    
+                </div>
+             </div>
+             <div class="swiper-slide">
+                <img src="img/slide-bg.jpg" alt="">
+                <div class="slide-content">
+                    <h2 class="content-tittle">Ремонт 3-х комнатной квартиры</h2>
+                    <div class="info">
+                        <p class="adress"><span>Адрес объекта:</span>МЖК Sunrice City</p>
+                        <p class="S"><span>Площадь:</span>110 м2</p>
+                        <p class="srok"><span>Срок выполнения:</span>25 дней</p>
+                        <p class="price"><span>Стоимость ремонта:</span>250 000 рублей</p>
+                    </div>
+                    <a href=""><button class="slide-button">Подробнее<img src="img/Arrow.svg" alt=""></button></a>
+                </div>
+             </div>
+             <div class="swiper-slide">
+                <img src="img/slide-bg.jpg" alt="">
+                <div class="slide-content">
+                    <h2 class="content-tittle">Ремонт 3-х комнатной квартиры</h2>
+                    <div class="info">
+                        <p class="adress"><span>Адрес объекта:</span>МЖК Sunrice City</p>
+                        <p class="S"><span>Площадь:</span>110 м2</p>
+                        <p class="srok"><span>Срок выполнения:</span>25 дней</p>
+                        <p class="price"><span>Стоимость ремонта:</span>250 000 рублей</p>
+                    </div>
+                    <a href=""><button class="slide-button">Подробнее<img src="img/Arrow.svg" alt=""></button></a>
+                </div>
+             </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>          
+    </div>
+</section>
+    <section class="shema">
+    <div class="container">
+        <div class="container__inner">
+            <h1 class="shema-tittle">схема работы</h1>
+            <div class="stages">
+                <div class="stage">
+                    <div class="stage-number">
+                        <h3>01</h3>
+                        <img src="img/Arrow1.svg" alt="">
+                    </div>
+                    <div class="stage-info">
+                        <h2 class="info-tittle">Вы оставляете заявку</h2>
+                        <p class="info-subtittle">Можете оставить заявку на сайте, позвонить или написать на нашу почту</p>
+                    </div>
+                </div>
+                <div class="stage">
+                    <div class="stage-number">
+                        <h3>02</h3>
+                        <img src="img/Arrow1.svg" alt="">
+                    </div>
+                    <div class="stage-info">
+                        <h2 class="info-tittle">Вы оставляете заявку</h2>
+                        <p class="info-subtittle">Можете оставить заявку на сайте, позвонить или написать на нашу почту</p>
+                    </div>
+                </div>
+                <div class="stage">
+                    <div class="stage-number">
+                        <h3>03</h3>
+                        <img src="img/Arrow1.svg" alt="">
+                    </div>
+                    <div class="stage-info">
+                        <h2 class="info-tittle">Вы оставляете заявку</h2>
+                        <p class="info-subtittle">Можете оставить заявку на сайте, позвонить или написать на нашу почту</p>
+                    </div>
+                </div>
+                <div class="stage">
+                    <div class="stage-number">
+                        <h3>04</h3>
+                        <img src="img/Arrow1.svg" alt="">
+                    </div>
+                    <div class="stage-info">
+                        <h2 class="info-tittle">Вы оставляете заявку</h2>
+                        <p class="info-subtittle">Можете оставить заявку на сайте, позвонить или написать на нашу почту</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="contact">
+    <div class="container">              
+        <div class="contact__inner">
+            <div class="left-bar">
+                <img src="img/Frame.svg" alt="">
+                <img class="arr" src="img/Arrowdown.svg" alt="">
+                <img src="img/Vectorcenter.svg" alt="">
+                <img class="arr" src="img/Arrowdown.svg" alt="">
+                <img src="img/house.svg" alt="">
+            </div>
+            <div class="main-content">
+                <h1 class="content-tittle">Сделай ремонт дома  вместе со СтройТат</h1>
+                <p class="content-subtittle">Созвонимся, встретимся и начнём...</p>
+                <input type="phone" placeholder="Ваш телефон">
+                <a href=""><button class="content-btn">Оставить заявку</button></a>
+                <p class="info">Нажимая на кнопку, Вы соглашаетесь с условиями<a href=""> обработки персональных данных</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="reviews">
+    <div class="container">
+        <div class="top">
+        <h1 class="reviews-tittle">отзывы</h1>
+        <a href=""><button class="reviews-btn">Смотреть все</button></a>
+        </div>
+        <!-- Slider main container -->
+<div class="swiper1">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="slide__inner">
+            <div class="slide-info">
+                <h1 class="slide-tittle">Ремонт 3-х комнатной квартиры</h1>
+                <div class="zakaz">
+                    <div class="customer">
+                        <h3 class="customer-tittle">Заказчик:</h3>
+                        <p class="customer-subtittle">Иванов Иван Иванович</p>
+                    </div>
+                    <div class="order">
+                        <h3 class="order-tittle">Адрес:</h3>
+                        <p class="order-subtittle">МЖК Sunrice City</p>
+                    </div>
+                </div>
+                <div class="zadacha">
+                   <h3 class="zadacha-tittle">Задача:</h3>
+                   <p class="zadacha-subtittle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate pulvinar lectus turpis mattis orci. Nisi id tincidunt lacus, sit mi nunc integer ornare. Nunc dignissim nunc iaculis lacus viverra pulvinar ullamcorper ornare. Senectus viverra duis eget cursus interdum nunc id tristique maecenas.</p>
+                </div>
+                <div class="otzyv">
+                    <h3 class="otzyv-tittle">Отзыв:</h3>
+                    <p class="otzyv-subtittle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate pulvinar lectus turpis mattis orci. Nisi id tincidunt lacus, sit mi nunc integer ornare. Nunc dignissim nunc iaculis lacus viverra pulvinar ullamcorper ornare. Senectus viverra duis eget cursus interdum nunc id tristique maecenas.</p>
+                </div>
+            </div>
+            <img class="slide-img" src="img/otzyv.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide__inner">
+            <div class="slide-info">
+                <h1 class="slide-tittle">Ремонт 3-х комнатной квартиры</h1>
+                <div class="zakaz">
+                    <div class="customer">
+                        <h3 class="customer-tittle">Заказчик:</h3>
+                        <p class="customer-subtittle">Иванов Иван Иванович</p>
+                    </div>
+                    <div class="order">
+                        <h3 class="order-tittle">Адрес:</h3>
+                        <p class="order-subtittle">МЖК Sunrice City</p>
+                    </div>
+                </div>
+                <div class="zadacha">
+                   <h3 class="zadacha-tittle">Задача:</h3>
+                   <p class="zadacha-subtittle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate pulvinar lectus turpis mattis orci. Nisi id tincidunt lacus, sit mi nunc integer ornare. Nunc dignissim nunc iaculis lacus viverra pulvinar ullamcorper ornare. Senectus viverra duis eget cursus interdum nunc id tristique maecenas.</p>
+                </div>
+                <div class="otzyv">
+                    <h3 class="otzyv-tittle">Отзыв:</h3>
+                    <p class="otzyv-subtittle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate pulvinar lectus turpis mattis orci. Nisi id tincidunt lacus, sit mi nunc integer ornare. Nunc dignissim nunc iaculis lacus viverra pulvinar ullamcorper ornare. Senectus viverra duis eget cursus interdum nunc id tristique maecenas.</p>
+                </div>
+            </div>
+            <img class="slide-img" src="img/otzyv.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide__inner">
+            <div class="slide-info">
+                <h1 class="slide-tittle">Ремонт 3-х комнатной квартиры</h1>
+                <div class="zakaz">
+                    <div class="customer">
+                        <h3 class="customer-tittle">Заказчик:</h3>
+                        <p class="customer-subtittle">Иванов Иван Иванович</p>
+                    </div>
+                    <div class="order">
+                        <h3 class="order-tittle">Адрес:</h3>
+                        <p class="order-subtittle">МЖК Sunrice City</p>
+                    </div>
+                </div>
+                <div class="zadacha">
+                   <h3 class="zadacha-tittle">Задача:</h3>
+                   <p class="zadacha-subtittle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate pulvinar lectus turpis mattis orci. Nisi id tincidunt lacus, sit mi nunc integer ornare. Nunc dignissim nunc iaculis lacus viverra pulvinar ullamcorper ornare. Senectus viverra duis eget cursus interdum nunc id tristique maecenas.</p>
+                </div>
+                <div class="otzyv">
+                    <h3 class="otzyv-tittle">Отзыв:</h3>
+                    <p class="otzyv-subtittle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate pulvinar lectus turpis mattis orci. Nisi id tincidunt lacus, sit mi nunc integer ornare. Nunc dignissim nunc iaculis lacus viverra pulvinar ullamcorper ornare. Senectus viverra duis eget cursus interdum nunc id tristique maecenas.</p>
+                </div>
+            </div>
+            <img class="slide-img" src="img/otzyv.jpg" alt="">
+        </div>
+      </div>
+      
+    </div>  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev1"><img src="img/btnprev.svg" alt=""></div>
+    <div class="swiper-button-next1"><img src="img/btnnext.svg" alt=""></div>
+ 
+    </div>
+    </div>
+</section>
+    <section class="uslugi">
+    <div class="container">
+        <h1 class="uslugi-tittle">услуги ремонта</h1>
+        <div class="jobs">
+            <div class="job">
+                <div class="job__inner">
+                <h4 class="job-tittle">Демонтажные работы в Набережных Челнах</h4>
+                <h3 class="job-price">от 100/м2</h3>
+                <p class="job-subtittle">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</p>
+                <a href=""><button class="job-btn">Подробнее</button></a>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__inner">
+                <h4 class="job-tittle">Демонтажные работы в Набережных Челнах</h4>
+                <h3 class="job-price">от 100/м2</h3>
+                <p class="job-subtittle">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</p>
+                <a href=""><button class="job-btn">Подробнее</button></a>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__inner">
+                <h4 class="job-tittle">Демонтажные работы в Набережных Челнах</h4>
+                <h3 class="job-price">от 100/м2</h3>
+                <p class="job-subtittle">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</p>
+                <a href=""><button class="job-btn">Подробнее</button></a>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__inner">
+                <h4 class="job-tittle">Демонтажные работы в Набережных Челнах</h4>
+                <h3 class="job-price">от 100/м2</h3>
+                <p class="job-subtittle">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</p>
+                <a href=""><button class="job-btn">Подробнее</button></a>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__inner">
+                <h4 class="job-tittle">Демонтажные работы в Набережных Челнах</h4>
+                <h3 class="job-price">от 100/м2</h3>
+                <p class="job-subtittle">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</p>
+                <a href=""><button class="job-btn">Подробнее</button></a>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__inner">
+                <h4 class="job-tittle">Демонтажные работы в Набережных Челнах</h4>
+                <h3 class="job-price">от 100/м2</h3>
+                <p class="job-subtittle">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</p>
+                <a href=""><button class="job-btn">Подробнее</button></a>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__inner">
+                <h4 class="job-tittle">Демонтажные работы в Набережных Челнах</h4>
+                <h3 class="job-price">от 100/м2</h3>
+                <p class="job-subtittle">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</p>
+                <a href=""><button class="job-btn">Подробнее</button></a>
+                </div>
+            </div>
+            <a class="btn-link" href=""><button class="alljobs">Посмотреть все</button></a>
+        </div>
+    </div>
+</section>
+    <section class="form">
+    <div class="container">
+        <h1 class="form-tittle">Готовы обсудить ваш ремонт?</h1>
+        <div class="form-info">
+            <div class="left">
+                <h3 class="left-tittle">Бесплатно вызовите нашего замерщика в удобное для вас время</h3>
+                <p class="spec">К вам на объект приедет наш специалист, который:</p>
+                <div class="spec-jobs">
+                    <p>Сделает точный замер;</p>
+                    <p>Подскажет по выбору материала;</p>
+                    <p>Проконсультирует по видам работ;</p>
+                    <p>Сориентуриет по стоимости и срокам;</p>
+                </div>                
+            </div>
+            <div class="right">
+                <h3 class="right-tittle">Заполните форму, мы перезвоним вам и согласуем дату и время визита специалиста</h3>
+                <input type="phone" placeholder="Ваш телефон">
+                <a href=""><button class="right-btn">перезвоните мне</button></a>
+                <p class="right-subtittle">Нажимая на кнопку, Вы соглашаетесь с условиями <a href="">обработки персональных данных</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="answers">
+    <div class="container">
+        <h1 class="answers-tittle">Ответы на ваши вопросы</h1>
+        <div class="questions-flex">
+            <details>
+                <summary> 
+                    <span>01</span>                   
+                    <p class="questions-sum">С чего лучше начать ремонт квартиры?                  
+                    <img class="sum-img" src="img/spoiler.svg" alt=""></p>
+                </summary>
+                <p class="spoiler-info">Ремонт квартиры чаще всего начинается с подготовительных или демонтажных работ. Вы всегда можете оставить заявку на сайте и мы подробно расскажем вам, с чего лучше начинать ремонт квартиры</p>
+            </details>
+            <details>
+                <summary> 
+                    <span>02</span>                   
+                    <p class="questions-sum">С чего лучше начать ремонт квартиры?                  
+                    <img class="sum-img" src="img/spoiler.svg" alt=""></p>
+                </summary>
+                <p class="spoiler-info">Ремонт квартиры чаще всего начинается с подготовительных или демонтажных работ. Вы всегда можете оставить заявку на сайте и мы подробно расскажем вам, с чего лучше начинать ремонт квартиры</p>
+            </details>
+            <details>
+                <summary> 
+                    <span>03</span>                   
+                    <p class="questions-sum">С чего лучше начать ремонт квартиры?                  
+                    <img class="sum-img" src="img/spoiler.svg" alt=""></p>
+                </summary>
+                <p class="spoiler-info">Ремонт квартиры чаще всего начинается с подготовительных или демонтажных работ. Вы всегда можете оставить заявку на сайте и мы подробно расскажем вам, с чего лучше начинать ремонт квартиры</p>
+            </details>
+            <details>
+                <summary> 
+                    <span>04</span>                   
+                    <p class="questions-sum">С чего лучше начать ремонт квартиры?                  
+                    <img class="sum-img" src="img/spoiler.svg" alt=""></p>
+                </summary>
+                <p class="spoiler-info">Ремонт квартиры чаще всего начинается с подготовительных или демонтажных работ. Вы всегда можете оставить заявку на сайте и мы подробно расскажем вам, с чего лучше начинать ремонт квартиры</p>
+            </details>
+            <details>
+                <summary> 
+                    <span>05</span>                   
+                    <p class="questions-sum">С чего лучше начать ремонт квартиры?                  
+                    <img class="sum-img" src="img/spoiler.svg" alt=""></p>
+                </summary>
+                <p class="spoiler-info">Ремонт квартиры чаще всего начинается с подготовительных или демонтажных работ. Вы всегда можете оставить заявку на сайте и мы подробно расскажем вам, с чего лучше начинать ремонт квартиры</p>
+            </details>
+        </div>
+    </div>
+</section>
+   <main>
+   
+   </main>
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="comp-remont">
+                <h1 class="comp-remont-tittle">Комплексный ремонт</h1>
+                <ul>
+                    <li>Косметический ремонт</li>
+                    <li>Капитальный ремонт</li>
+                    <li>Эксклюзивный ремонт</li>
+                    <li>Квартира вторичка</li>
+                    <li>Квартира новостройка</li>
+                    <li>Студия</li>
+                    <li>Апартаменты</li>
+                    <li>Лофт</li>
+                    <li>Пентхаус</li>
+                    <li>Коттедж</li>
+                    <li>Загородный дом</li>
+                    <li>Нежилое помещение</li>
+                    <li>Комплексный дизайн-проект</li>
+                </ul>
+            </div>
+            <div class="remont-otd">
+                <h1 class="remont-otd-tittle">Ремонт отдельных помещений</h1>
+                <ul>
+                    <li>Ванная комната</li>
+                    <li>Туалет</li>
+                    <li>Жилая комната</li>
+                    <li>Спальня</li>
+                    <li>Кухня</li>
+                    <li>Гостиная</li>
+                    <li>Кабинет</li>
+                    <li>Детская комната</li>
+                    <li>Балкон или лоджия</li>
+                    <li>Гардеробная</li>
+                    <li>Прихожая</li>
+                    <li>Дизайн-проект помещения</li>
+                </ul>
+            </div>
+            <div class="melk-rab">
+                <h1 class="melk-rab-tittle">Мелкие ремонтые работы</h1>
+                <ul>
+                    <li>Отедкла стен</li>
+                    <li>Настил пола</li>
+                    <li>Отделка потолка</li>
+                    <li>Малярные работы</li>
+                    <li>Электромонтажные работы</li>
+                    <li>Сантехнические работы</li>
+                    <li>Демонтажные работы</li>
+                    <li>Черновая отделка</li>
+                    <li>Объединение лоджии с комнатой</li>
+                    <li>Межкомнатные двери</li>
+                    <li>Монтаж стен и перегородок</li>
+                    <li>Смотреть все работы</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <div class="footer-logo">
+                <img src="img/logo-f.svg" alt="">
+                <a href="">Калькулятор стоимости</a>
+                <a href="">Бесплатный выезд замерщика</a>
+            </div>
+            <div class="navigation">
+                <h4 class="navigation-tittle">Навигация по сайту</h4>
+                <ul>
+                    <li>Главная</li>
+                    <li>Ремонт квартир</li>
+                    <li>Ремонт коммерческих объектов</li>
+                    <li>Ремонт коммерческих объектов</li>
+                    <li>Ремонт коттеджей и домов</li>
+                    <li>Отдельные виды работ</li>
+                    <li>О нас</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h4 class="info-tittle">Информация</h4>
+                <ul>
+                    <li>Вопрос-ответ</li>
+                    <li>Новости</li>
+                    <li>Акции</li>
+                    <li>Отзывы</li>
+                    <li>Портфолио</li>
+                </ul>
+            </div>
+            <div class="footer-adv">
+                <h4 class="adv-tittle">Преимущества</h4>
+                <ul>
+                    <li>Один подрядчик на все виды работ</li>
+                    <li>От проекта до сдачи объекта под ключ</li>
+                    <li>Фиксированная цена в договоре</li>
+                    <li>Гарантия на работы</li>
+                    <li>Строители с опытом более 15 лет</li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <h4 class="contacts-tittle">Контакты</h4>
+                <p class="tel">+7 999 999-99-99</p>
+                <p class="call">Перезвоните мне</p>
+                <p class="email">pochta@stroy-tat.ru</p>
+                <a class="whatsapp" href="">
+                    <img src="img/whatsapp.svg" alt="">
+                    <p>Написать в WhatsApp</p>
+                </a>
+            </div>
+        </div>
+        <p class="end">Информация, размещённая на сайте, носит ознакомительный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 ГК РФ</p>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  
+    <script src="js/app.min.js"></script>
+  </body>
+</html> 
+
+
